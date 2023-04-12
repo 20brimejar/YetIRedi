@@ -1,7 +1,5 @@
 
 /*
- * Alexia White edited this part
- * finished some things
 #EBF5FC nav blue
 #EF5324 orange
 #80C1DB darker blue
@@ -211,7 +209,10 @@ header {
   padding-top: 1500px;
   
 }
-
+@media screen  and max-width(600px){
+  
+  
+}
 
 
 
