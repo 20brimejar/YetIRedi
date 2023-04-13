@@ -210,6 +210,7 @@ header {
 
 .container .product-image img:hover {
   transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container > div {
@@ -457,15 +458,20 @@ label {
 footer {
   background-color: #EBF5FC;
   width: 100%;
-  height: 300px;
+  height: 380px;
   margin-top: 200px;
- 
+}
+
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 70px 70px 70px;
 }
 
 .footer-container > div {
   text-align: center;
   padding: 30px 20px;
-  background-color: rgb(131, 131, 131);
   text-transform: uppercase;
 }
 
@@ -505,8 +511,9 @@ footer {
 .footer-container > div:nth-child(5) {
   font-weight: bold;
   font-size: 1rem;
-  grid-column: 6 / 8;
-  justify-self: center;
+  grid-column: 7 / 8;
+  /* justify-content: end; */
+  justify-self: center;;
 }
 
 /* snacks */
@@ -515,6 +522,7 @@ footer {
   font-size: 1rem;
   grid-column: 1 / 2;
   justify-self: center;
+  text-align: left;
 }
 
 /* nutrition */
@@ -523,6 +531,91 @@ footer {
   font-size: 1rem;
   grid-column: 2 / 3;
   justify-self: center;
+}
+
+/* beginnings  */
+.footer-container > div:nth-child(8) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 3 / 4;
+  justify-self: center;
+}
+
+/* FAQS  */
+.footer-container > div:nth-child(9) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 4 / 5;
+  justify-self: center;
+}
+
+
+/* Footer image */
+.footer-container .socials img {
+  height: 100px;
+  width: 100px;
+  align-content: space-between;
+  transition: 0.3s ease-in-out;
+}
+
+/* instagram icon  */
+.footer-container > div:nth-child(10) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 6/ 6;
+}
+
+/* facebook icon  */
+.footer-container > div:nth-child(11) {
+  grid-column: 7 / 7;
+  justify-self: center;
+}
+
+/* youtube icon*/
+.footer-container > div:nth-child(12) {
+  grid-column: 8 / 9;
+  justify-self: start;
+}
+
+/* Meals  */
+.footer-container > div:nth-child(13) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 1 / 2;
+  justify-self: center;
+  text-align: left;
+}
+
+/* Year Life  */
+.footer-container > div:nth-child(14) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+/* Emergency */
+.footer-container > div:nth-child(15) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 1 / 2;
+  justify-self: center;
+}
+
+/* vegetarian*/
+.footer-container > div:nth-child(16) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 1 / 2;
+  justify-self: center;
+}
+
+.footer-container > div a:hover {
+  color:#EF5324;
+}
+
+.footer-container .socials img:hover {
+  transform: scale(1.05);
 }
 
 /*mobile css*/
