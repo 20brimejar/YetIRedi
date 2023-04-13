@@ -54,6 +54,7 @@ header {
 .menu-items {
   display: flex;
   align-items: center;
+  
 }
 
 .menu-items a {
@@ -131,7 +132,7 @@ header {
 /*hero image styling*/
 .hero-carousel {
   width: 100%;
-  height: 850px; /* adjust to your desired height */
+  height: 870px;
   position: relative;
   overflow: hidden;
 }
@@ -151,8 +152,8 @@ header {
 
 .hero-carousel .shop {
   position: absolute;
-  bottom: 56%;
-  left: 75%;
+  bottom: 51%;
+  left: 73%;
   transform: translateX(-50%);
   background-color: #EF5324;
   color: #fff;
@@ -178,7 +179,7 @@ header {
   right: 0;
   padding: 20px 20px;
   text-align: right;
-  font-size: 500%;
+  font-size: 600%;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
@@ -186,33 +187,350 @@ header {
 }
 
 
+/* Body styling */
+.container {
+  max-width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+
+/* image demensions */
+.container img {
+  width: 550px;
+  height: 550px;
+  border-radius: 2px;
+}
+
+/* product image demensions */
+.container .product-image img {
+  width: 225px;
+  height: 200px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .product-image img:hover {
+  transform: scale(1.05);
+}
+
+.container > div {
+  text-align: center;
+  padding: 20px;
+}
+
+/* why yeti text*/
+.container > div:nth-child(1) {
+  grid-column: 1 / span 6;
+  font-weight: bold;
+  font-size: 2rem;
+  color:#EF5324;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+}
+
+/* stawberry image */
+.container > div:nth-child(2) {
+  grid-column: 1 / span 3;
+  justify-self: center;
+}
+
+/* First text block */
+.container > div:nth-child(3) {
+  grid-column: 4 / 7;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: lighter;
+  justify-self: start;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* second text block */
+.container > div:nth-child(4) {
+  grid-column: 1 / 4;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 90px;
+}
+
+/* skizzles image */
+.container > div:nth-child(5) {
+  grid-column: 4 / span 3;
+}
+
+/* what is yeti text*/
+.container > div:nth-child(6) {
+  grid-column: 1 / span 6;
+  font-weight: bold;
+  font-size: 2rem;
+  color:#EF5324;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+/* third text block */
+.container > div:nth-child(7) {
+  grid-column: 1 / span 6;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* 4th text block */
+.container > div:nth-child(8) {
+  grid-column: 1 / span 6;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* 5th text block */
+.container > div:nth-child(9) {
+  grid-column: 1 / span 6;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* what is yeti text*/
+.container > div:nth-child(10) {
+  grid-column: 1 / span 6;
+  font-weight: bold;
+  font-size: 2rem;
+  color:#EF5324;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* taffy puffs image */
+.container > div:nth-child(11) {
+  grid-column: 1 /  3;
+}
+
+/* bit-o-honey */
+.container > div:nth-child(12) {
+  grid-column: 3 /  5;
+}
+
+/* glaxy burst */
+.container > div:nth-child(13) {
+  grid-column: 5 /  7;
+}
+
+/* taffy puff text */
+.container > div:nth-child(14) {
+  grid-column: 1 / 3;
+  font-weight: lighter;
+  align-self: top;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+/* bit-o-honey text*/
+.container > div:nth-child(15) {
+  grid-column: 3 / 5;
+  font-weight: lighter;
+  align-self: top;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+/* galaxy burst text*/
+.container > div:nth-child(16) {
+  grid-column: 5 / 7;
+  font-weight: lighter;
+  align-self: top;
+  justify-self: center;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+.container .quick-link a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.container .quick-link a:hover {
+  color: #EF5324;
+}
 
 
 
-/*body styling*/
-.section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
+/* News letter */
+.news-container {
+  max-width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.section h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  line-height: 6vw;
-  color: #000;
+/* stay in the know */
+.news-container > div:nth-child(1) {
+  grid-column: 1 / span 6;
+  font-weight: bold;
+  font-size: 2rem;
+  color:#000;
   text-transform: uppercase;
-  padding-top: 1500px;
-  
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: -20px;
 }
 
+/* sign up */
+.news-container > div:nth-child(2) {
+  grid-column: 1 / span 6;
+  font-weight: lighter;
+  font-size: 1.75rem;
+  color:#000;
+  text-transform: uppercase;
+  padding-top: 100px;
+  text-align: center;
+  margin-top: -50px;
+}
 
+/* form info */
+form {
+  display:grid;
+  grid-auto-rows: auto;
+  grid-template-columns:repeat(6, 1fr);
+  gap:0.75rem;
+  width:70%;
+  margin: 100px;
+}
 
+input, textarea {
+  font-size: 1rem;
+  padding: 10px;
+  color:#000;
+  background-color: #eee;
+  border:none;
+  text-transform: uppercase;
+}
 
+input:focus, textarea:focus {
+  outline:none;
+  background-color:#eee;
+}
 
+form >label:nth-child(1) {
+  grid-column: 1 / 2;
+}
+
+label {
+  padding:10px;
+  text-align: right;
+  grid-column: 1 / 2;
+}
+
+#mysubmit{
+  width:10rem;
+  grid-column: 5 / 6;
+  background-color: #a1d8ff;
+}
+
+/* footer */
+footer {
+  background-color: #EBF5FC;
+  width: 100%;
+  height: 300px;
+  margin-top: 200px;
+ 
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  background-color: rgb(202, 200, 200);
+}
+
+.footer-container > div {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgb(131, 131, 131);
+  text-transform: uppercase;
+}
+
+.footer-container > div a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* shop */
+.footer-container > div:nth-child(1) {
+  font-weight: bold;
+  font-size: 1rem;
+  grid-column: 1 /  2;
+}
+/* why yeti */
+.footer-container > div:nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+  grid-column: 2 / 3;
+}
+
+/* about */
+.footer-container > div:nth-child(3) {
+  font-weight: bold;
+  font-size: 1rem;
+  grid-column: 3 / 4;
+}
+
+/* contact */
+.footer-container > div:nth-child(4) {
+  font-weight: bold;
+  font-size: 1rem;
+  grid-column: 4 / 5;
+}
+
+/* find us */
+.footer-container > div:nth-child(5) {
+  font-weight: bold;
+  font-size: 1rem;
+  grid-column: 6 / 8;
+  justify-self: center;
+}
+
+/* snacks */
+.footer-container > div:nth-child(6) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 1 / 2;
+  justify-self: center;
+}
+
+/* nutrition */
+.footer-container > div:nth-child(7) {
+  font-weight: lighter;
+  font-size: 1rem;
+  grid-column: 2 / 3;
+  justify-self: center;
+}
