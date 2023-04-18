@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Yeti Redi</title>
+
+    <script> 
+      function validateForm() {
+          if (document.forms[0].myEmail.value == "" ) {
+                alert("Please enter an e-mail address.");
+                return false;
+          } // end if
+          return true;
+      } // end function validateForm
+      </script>
+
+</head>
+<body>
+  <div id="bluebar"></div>
+
+<header class="header">
+  <img src="images/yeti.png" alt="logo" class="logo">
+  <nav>
+    <ul class="menu-items">
+      <li>
+        <a href="#" class="menuitem">Shop</a>
+         <div class="mega-menu">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Meals</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Entrees</a></li>
+                  <li><a href="#">Breakfast</a></li>
+                  <li><a href="#">Desserts</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Emergency</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Kits</a></li>
+                  <li><a href="#">Meals</a></li>
+                </ul>
+              </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2>Snacks</h2>
+              <ul class="mega-links">
+                <li><a href="#">Candy</a></li>
+                <li><a href="#">Fruit</a></li>
+              </ul>
+            </section>
+         </div>
+      </li>
+      <li>
+        <a href="#" class="menuitem">Why Yeti</a>
+      </li>
+      <li>
+        <a href="#" class="menuitem">About</a>
+      </li>
+      <li>
+        <a href="#" class="menuitem">Account</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <div class="container">
+
+    <div><h1>Why Yeti</h1></div>
+
+    <div><img src="images/Strawberries .jpg" alt="strawberries"></div>
+
+    <div>
+      Here at Yeti Reti, we take pride in 
+      our unique features that make it stand out 
+      from other outdoor food options. <br><br>
+      Our freeze-dried meals taste just like home-cooked meals, 
+      making them a perfect choice for those who crave the comfort 
+      of homemade food while on outdoor adventures.
+    </div>
+
+    <div>
+      Yeti meals are easily accessible for all outdoor activities, whether 
+      you're hiking, camping, or enjoying a day out in nature. They are 
+      lightweight and easy to pack, making them a great on-the-go option.<br><br> 
+      We offer fresh ingredients that provide a healthy and delicious meal 
+      option for those in the great outdoors.
+    </div>
+
+    <div><img src="images/Skizzels .jpg" alt="freeze dried skittles"></div>
+
+
+    <div><h1>What is yeti</h1></div>
+
+    <div>
+      Yeti Redi is a freeze-dried food company that not only offers 
+      quality outdoor food products, but also strives to educate its 
+      customers on the benefits of freeze-dried food. Their mission is 
+      to provide convenient and nutritious meal options for outdoor 
+      enthusiasts, while also promoting responsible outdoor practices.
+    </div>
+
+
+    <div>
+      In addition to offering a range of freeze-dried meals and 
+      snacks, Yeti Redi aims to empower customers with the knowledge 
+      and tools to make informed decisions about their outdoor food choices. 
+      They are committed to using high-quality ingredients ensuring that 
+      their products are not only delicious but also quality.
+    </div>
+
+    <div>
+      Whether you're planning a multi-day backpacking trip or a day hike in the 
+      mountains, Yeti Redi's freeze-dried meals provide a convenient and satisfying 
+      option for all your outdoor adventures.
+    </div>
+
+
+    <div><h1>Check us out</h1></div>
+
+    <div class="product-image">
+      <a href="#"><img src="images/Taffy Puffs .jpg" alt="freeze dried laffy taffy"></a>
+    </div>
+
+    <div class="product-image">
+      <a href="#"><img src="images/Bit - O - Honeys .jpg" alt="freeze dried honey candy"></a>
+    </div>
+
+    
+      <div class="product-image">
+       <a href="#"> <img src="images/Galaxy Burts .jpg" alt="freeze dried starbursts"></a>
+      </div>
+
+    
+    <div class="quick-link"><a href="#">Taffy puffs</a></div>
+
+    <div class="quick-link"><a href="#">Bit-o-honey</a></div>
+
+    <div class="quick-link"><a href="#">Galaxy Burts</a></div>
+
+  </div>
+
+<div class="news-container">
+  <div><h1>Stay in the know</h1></div>
+  <div>sign up for our news letter!</div>
+</div>
+
+<form method="post" onsubmit="return validateForm();" action="https://computing.utahtech.edu/web/1400/mail.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname">
+
+  <label for="myEmail">* E-mail:</label>
+  <input type="text" id="myEmail" name="myEmail">
+
+  <input type="submit" value="Submit" id="mysubmit">
+</form>
+
+<footer>
+  <div class="footer-container">
+
+    <div><a href="#">Shop</a></div>
+    <div><a href="#">Why Yeti</a></div>
+    <div><a href="#">About</a></div>
+    <div><a href="#">Contact</a></div>
+    <div>Find us on</div>
+
+      <div class="sub-footer"><a href="#">Snacks</a></div>
+      <div class="sub-footer"><a href="#">Nutrition</a></div>
+      <div class="sub-footer"><a href="#">Beginnings</a></div>
+      <div class="sub-footer"><a href="#">FAQS</a></div>
+
+      <div class="socials">
+        <a href="#"><img src="images/instagram.png" alt="instgram icon"></a>
+      </div>
+        
+      <div class="socials">
+        <a href="#"><img src="images/facebook.png" alt="facebook icon"></a>
+      </div>
+        
+      <div class="socials">
+        <a href="#"><img src="images/youtube.png" alt="youtube icon"></a>
+      </div>
+
+      <div class="sub-footer"><a href="#">Meals</a></div>
+      <div class="sub-footer"><a href="#">Year Life</a></div>
+      
+
+      <div class="sub-footer"><a href="#">Emergency</a></div>
+      <div class="sub-footer"><a href="#">Vegetarian</a></div>
+      <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=88HtZrBqeBeXGSS6lmzwv9XAaaRFPKqYGdo5cYpyAeiWRSjQLKkkqbSkaJpf"></script></span>
+
+
+      </div>
+  </div>
+</footer>
+</body>
+</html>
