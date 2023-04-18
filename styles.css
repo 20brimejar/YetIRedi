@@ -627,7 +627,11 @@ footer {
     overflow: hidden;
   }
   .container{
-    display: block;
+    display: grid;
+  }
+  footer{
+    margin: 0px;
+    padding: 0px;
   }
   
 }
