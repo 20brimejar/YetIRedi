@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <title>Yeti Redi</title>
-
-    <script> 
-      function validateForm() {
-          if (document.forms[0].myEmail.value == "" ) {
-                alert("Please enter an e-mail address.");
-                return false;
-          } // end if
-          return true;
-      } // end function validateForm
-      </script>
-
-      <style>
-        h1 {
-          color: #000;
-        }
-      </style>
-
-<?php wp_head(); ?>
-
-</head>
-<body>
-
-<?php
-  require_once("header.php");
-?>
-
+<?php include('header.php'); ?>
 <div class="hero-carousel">
   <img src="images/hiking.jpg" alt="Image 1">
   <img src="images/walking.jpg" alt="Image 2" class="second-image">
@@ -41,6 +9,29 @@
 
   <h1 class="cta">Shop our <br>outdoor<br> essentials <br>today</h1>
 </div>
+
+<!-- 
+  <div class-="container">
+
+  <div><h1>Why Yeti</h1></div>
+
+    <div>
+      <img src="images/Strawberries .jpg" alt="strawberries">
+    </div>
+
+    <div>
+        <p>
+          Here at Yeti Reti, we take pride in 
+          our unique features that make it stand out 
+          from other outdoor food options. 
+          Our freeze-dried meals taste just like home-cooked meals, 
+          making them a perfect choice for those who crave the comfort 
+          of homemade food while on outdoor adventures.
+        </p>
+    </div>
+
+  </div> -->
+
 
   <div class="container">
 
@@ -135,11 +126,4 @@
 
   <input type="submit" value="Submit" id="mysubmit">
 </form>
-
-<?php
-  require_once("footer.php");
-?>
-
-  
-</body>
-</html>
+<?php include('footer.php'); ?>

@@ -1,3 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Yeti Redi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <script> 
+      function validateForm() {
+          if (document.forms[0].myEmail.value == "" ) {
+                alert("Please enter an e-mail address.");
+                return false;
+          } // end if
+          return true;
+      } // end function validateForm
+      </script>
+
+</head>
+<body>
+  <div id="bluebar"></div>
+
 <header class="header">
   <img src="images/yeti.png" alt="logo" class="logo">
   <nav>
@@ -37,10 +61,10 @@
          </div>
       </li>
       <li>
-        <a href="#" class="menuitem">Why Yeti</a>
+        <a href="whyYeti.php" class="menuitem">Why Yeti</a>
       </li>
       <li>
-        <a href="#" class="menuitem">About</a>
+        <a href="about.php" class="menuitem">About</a>
       </li>
       <li>
         <a href="#" class="menuitem">Account</a>
