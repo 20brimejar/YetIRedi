@@ -30,7 +30,11 @@
 
       <div class="sub-footer"><a href="#">Emergency</a></div>
       <div class="sub-footer"><a href="#">Vegetarian</a></div>
+      <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=88HtZrBqeBeXGSS6lmzwv9XAaaRFPKqYGdo5cYpyAeiWRSjQLKkkqbSkaJpf"></script></span>
 
 
-  </div>  
+      </div>
+  </div>
 </footer>
+</body>
+</html>
